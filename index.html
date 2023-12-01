@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vue with Tailwind</title>
+    <title>Jobmatcher gelijkaardige jobs</title>
 
     <!-- Vue CDN -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
@@ -36,9 +36,10 @@
           Jobmatcher demo application
         </h1>
         <p class="mt-6 text-gray-500 dark:text-gray-300">
-          Describe your job and get an official job title and description
+          Beschrijf wat je doet en we geven u een passende job titel en omschrijving.
         </p>
-        <input type="text" v-model="userJobDescription" placeholder="Start typing your job description" class="block mt-8 w-full placeholder-gray-400/70 dark:placeholder-gray-500 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300" />
+        <input type="text" v-model="userJobDescription" placeholder="Beschrijf wat je doet voor je job" 
+        class="block mt-8 w-full placeholder-gray-400/70 dark:placeholder-gray-500 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300" />
         <button
         @click="handleUserInput"
           class="
@@ -65,7 +66,7 @@
           :disabled="loading"
         >
         <i class="fas fa-spinner fa-spin text-xl" v-if="loading"></i> 
-          <span class="ml-2">Get similar jobs</span>
+          <span class="ml-2">Zoek naar gelijkaardige jobs</span>
         </button>
         <h1
           class="
